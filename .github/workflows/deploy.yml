@@ -35,6 +35,7 @@ jobs:
 
       - name: Create deployment archive
         run: |
+          mkdir -p public
           tar -czf deploy.tar.gz \
             .next \
             public \
